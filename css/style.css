@@ -195,6 +195,7 @@ section{
     margin-bottom:10px;
     position:relative;
     overflow:hidden;
+    background-color:var(--white);
 }
 .section01{
     padding-top:159px;
@@ -298,7 +299,7 @@ section{
         bottom:21px;
     }
     .marquee div{
-      height: 12px;
+        height: 12px;
         animation: marquee 10s linear infinite;
     }
     .marquee div span{
@@ -347,6 +348,7 @@ section{
         font-size:15px;
         margin-left:0;
         margin-bottom:12px;
+        text-align: right;
     }
     .name_sl{
         font-size:18px;
