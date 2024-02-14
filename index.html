@@ -97,8 +97,12 @@
                 </ul>
             </div>
             <section class="section01">
-                <video class="w_video" src="img/video_web.mp4" muted autoplay playsinline loop width="100%"></video>
-                <video class="m_video" src="img/video_web.mp4" muted autoplay playsinline loop width="100%"></video>
+                <div class="video_wrap">
+                    <span class="video_text"></span>
+                    <video class="w_video" src="img/video_web.mp4" muted autoplay playsinline loop width="100%">
+                    </video>
+                    <video class="m_video" src="img/video_web.mp4" muted autoplay playsinline loop width="100%"></video>
+                </div>
             </section>
             <section class="section02">
                 <div class="sec_wrap">
@@ -140,5 +144,33 @@
                 <!--modile-->
             </section>
         </div>
+        <script>
+            const text1 = "안녕하세요. 저는 4년동안 프로젝트 매니저와 서비스 기획자로 근무하다가 백엔드 개발자에게 다가가고 있는 유호선입니다. 매일 제가 보는 모든 제품의 PMF와 나아갈 방향을 고민하며, 이를 위해 조직을 구성하고 기술적 방법론을 논의합니다.";
+            const text2 = " 올바른 방법론을 형성하고 조직이 달성하려는 것이 무엇인지 이해하고 지식을 지속적으로 구매하는 것은 사회의 성장으로 이어집니다. 이제 저는 더욱 실무와 가까운 업무를 진행하며 성장하는 경험을 하고 싶습니다.";
+            const text = document.querySelector(".video_text");
+            let i = 0;
+            // setInterval함수로 100ms마다 호출 
+            function typing() {
+                if (i < text1.length) {
+                	// i인덱스에 해당하는 문자를 가져옴
+                    let txt = text1.charAt(i);
+                    text.innerHTML += txt;
+                } else if (i === text1.length) {
+                    text.innerHTML += "<br><br>";
+                    text.innerHTML += "<span id='text-bg'></span>";
+                } else if (i - text1.length <= text2.length) {
+                	
+                    let txt = text2.charAt(i - text1.length);
+                    document.getElementById("text-bg").innerHTML += txt;
+                }
+                i += 1;
+            
+                if (i > text1.length + text2.length) {
+                    clearInterval(intervalId);
+                }
+            }
+
+            const intervalId = setInterval(typing, 30);
+        </script>
     </body>
 </html>

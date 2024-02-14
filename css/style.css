@@ -261,6 +261,26 @@ section{
 .sec_wrap_mb{
     display:none;
 }
+.video_wrap{
+    width: 100%;
+    position: relative;
+}
+.video_text{
+    position: absolute;
+    display: block;
+    width: calc(70% - 80px);
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;
+    top:40px;
+    left:40px;
+}
+#text-bg{
+    font-weight: 400;
+}
+.w_video{
+    width: 100%;
+}
 .m_video{
     display:none;
 }
@@ -296,6 +316,13 @@ section{
     }
     .m_video{
         display:block;
+    }
+    .video_text{
+        font-size: 24px;
+        line-height: 32px;
+        width: calc(80% - 40px);
+        top:20px;
+        left:20px;
     }
     .w_video{
         display:none;
@@ -457,7 +484,15 @@ section{
         overflow:hidden;
     }
 }
-
+@media screen and (max-width: 700px) {
+    .video_text{
+        font-size: 14px;
+        line-height: 22px;
+        width: calc(100% - 40px);
+        top:20px;
+        left:20px;
+    }
+}
 @media (prefers-color-scheme: dark){
     :root{
         --white: #111111;
