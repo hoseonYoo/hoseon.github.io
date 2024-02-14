@@ -6,8 +6,8 @@ html{
     -ms-overflow-style:none;
 }
 :root{
-    --white: #fff;
-    --black: #000;
+    --white: #ffffff;
+    --black: #111111;
 }
 .dark-mode{
     background-color:var(--black);
@@ -444,7 +444,7 @@ section{
 
 @media (prefers-color-scheme: dark){
     :root{
-        --white: #000;
-        --black: #fff; 
+        --white: #111111;
+        --black: #ffffff; 
     }
 }
