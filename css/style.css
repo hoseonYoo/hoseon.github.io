@@ -271,12 +271,17 @@ section{
     width: calc(70% - 80px);
     font-size: 28px;
     line-height: 42px;
-    font-weight: 400;
     top:40px;
     left:40px;
+    z-index: 1;
+    color: #ffffff;
 }
-#text-bg{
-    font-weight: 400;
+.video_blur{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
 .w_video{
     width: 100%;
