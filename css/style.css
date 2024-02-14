@@ -272,7 +272,14 @@ section{
     }
     header{
         width:calc(100% - 50px);
+        height:130px;
         background-color:var(--white);
+    }
+    header > div:first-child{
+        padding-top:20px;
+    }
+    header > div:last-child{
+        padding-top:20px;
     }
     .pc_logo{
         display:none;
@@ -363,6 +370,9 @@ section{
     }
     .name_sl p{
         font-size:18px;
+    }
+    .section01{
+        padding-top:130px;
     }
     .section02{
         margin-bottom:0px;
