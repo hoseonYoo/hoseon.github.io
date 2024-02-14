@@ -365,7 +365,8 @@ section{
         font-size:18px;
     }
     .section02{
-        margin-bottom:110px;
+        margin-bottom:0px;
+        padding-bottom:110px;
     }
     .sec_wrap{
         display:none;
