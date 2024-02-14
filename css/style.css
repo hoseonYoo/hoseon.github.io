@@ -213,10 +213,16 @@ section{
     margin-bottom:10px;
     overflow:hidden;
 }
-.sec_wrap div{
+.sec_wrap div, .sec_wrap02 div{
     float:left;
-    background-color:#dcdcdc;
+    background-color:var(--white);
     overflow:hidden;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+}
+.sec_wrap div:hover, .sec_wrap02 div:hover{
+    background-size: 105%;
 }
 .sec_wrap div:nth-child(1){
     width:27.4%;
@@ -237,10 +243,6 @@ section{
     position:relative;
     margin-bottom:10px;
     overflow:hidden;
-}
-.sec_wrap02 div{
-    float:left;
-    background-color:#dcdcdc;
 }
 .sec_wrap02 div:nth-child(1){
     width:49.3%;
