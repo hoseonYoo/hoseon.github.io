@@ -30,6 +30,9 @@ ul,li,ol{
     list-style:none;
 }
 .clearfix::after{content:''; display: block; clear: both;}
+html{
+    background-color:var(--white);
+}
 body{
     width:100%;
     font-family: "Helvetica Neue";
