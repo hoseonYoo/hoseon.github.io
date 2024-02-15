@@ -496,6 +496,7 @@ section{
     }
     .m_video{
         display:block;
+        height: 100%;
     }
     .w_video{
         display:none;
