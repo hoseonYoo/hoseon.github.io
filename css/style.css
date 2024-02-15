@@ -417,10 +417,18 @@ section{
         width:100%;
         overflow:hidden;
     }
+    .sec_wrap_mb div{
+        background-size: 100%;
+        background-position: center;
+        background-color:var(--white);
+        transition: 0.3s;
+    }
+    .sec_wrap_mb div:hover{
+        background-size: 105%;
+    }
     .sec_wrap_mb div:nth-child(1){
         width:100%;
         padding-bottom:100%;
-        background-color:#dcdcdc;
         margin-bottom:10px;
         overflow:hidden;
     }
@@ -429,7 +437,6 @@ section{
     .sec_wrap_mb div:nth-child(11){
         width:calc(50% - 5px);
         padding-bottom:calc(50% - 5px);
-        background-color:#dcdcdc;
         margin-bottom:10px;
         margin-right:10px;
         float:left;
@@ -440,7 +447,6 @@ section{
     .sec_wrap_mb div:nth-child(12){
         width:calc(50% - 5px);
         padding-bottom:calc(50% - 5px);
-        background-color:#dcdcdc;
         margin-bottom:10px;
         float:left;
         overflow:hidden;
@@ -448,21 +454,18 @@ section{
     .sec_wrap_mb div:nth-child(6){
         width:100%;
         padding-bottom:50%;
-        background-color:#dcdcdc;
         margin-bottom:10px;
         overflow:hidden;
     }
     .sec_wrap_mb div:nth-child(7){
         width:100%;
         padding-bottom:100%;
-        background-color:#dcdcdc;
         margin-bottom:10px;
         overflow:hidden;
     }
     .sec_wrap_mb div:nth-child(8){
         width:calc(50% - 5px);
         padding-bottom:100%;
-        background-color:#dcdcdc;
         margin-bottom:10px;
         margin-right:10px;
         float:left;
@@ -471,7 +474,6 @@ section{
     .sec_wrap_mb div:nth-child(9){
         width:calc(50% - 5px);
         padding-bottom:calc(50% - 5px);
-        background-color:#dcdcdc;
         margin-bottom:10px;
         float:left;
         overflow:hidden;
@@ -479,7 +481,6 @@ section{
     .sec_wrap_mb div:nth-child(10){
         width:calc(50% - 5px);
         padding-bottom:calc(50% - 5px);
-        background-color:#dcdcdc;
         margin-bottom:10px;
         float:left;
         overflow:hidden;
